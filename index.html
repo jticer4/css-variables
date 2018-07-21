@@ -21,6 +21,22 @@
 		<img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
 		<style>
+			/*define css variables */
+			:root {
+				--base: white;
+				--spacing: 50px;
+				--blur: 70px;
+			}
+
+			img {
+				padding: var(--spacing);
+				background: var(--base);
+				filter: blur(--blur);
+			}
+
+			.hl {
+				color: var(--base);
+			}
 			/*
 			  misc styles, nothing to do with CSS variables
 			*/
